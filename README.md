@@ -81,8 +81,7 @@ mvn package     # tests + creates target/library-management.jar
 
 * Run with logs: `java -Dlibrary.debug=true -jar library-management.jar`.
   `Library` then prints who borrowed what, how many books the user already has, and the thread name.
-* In an IDE, put a breakpoint inside `Library.borrowBook` (on the limit check) and run
-  `LibraryTest.studentCannotBorrowAFourthBook` in debug mode.
+
   A good exercise: change `>=` to `>` in the limit check, run the tests, see which test fails, then find the bug with the debugger.
 
 ## Notes
